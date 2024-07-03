@@ -1,0 +1,4 @@
+SELECT
+COUNT(id) AS num_degrees, department_id
+FROM degrees
+GROUP BY department_id;
