@@ -1,0 +1,12 @@
+SELECT
+students.surname,
+students.name,
+degrees.name AS 'degree',
+departments.name AS 'department'
+FROM
+students
+INNER JOIN degrees ON students.degree_id = degrees.id
+INNER JOIN departments ON degrees.department_id = departments.id
+ORDER BY 
+students.surname,
+students.name;
