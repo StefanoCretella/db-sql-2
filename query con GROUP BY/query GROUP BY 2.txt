@@ -1,0 +1,5 @@
+SELECT office_address,
+COUNT(id) AS number_teacher
+FROM teachers
+GROUP BY office_address
+HAVING number_teacher <> 1
