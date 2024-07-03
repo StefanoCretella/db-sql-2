@@ -1,0 +1,8 @@
+SELECT
+`degrees`.`level` = 'magistrale' AS `magistrale`,
+`departments`.`name` AS `dipartimento`,
+`degrees`.`name` AS `corso_di_laurea`
+FROM 
+`departments`
+INNER JOIN  `degrees` ON `departments`.`id` = `degrees`.`department_id`
+WHERE `departments`.`name`LIKE "%Neuroscienze";
