@@ -1,0 +1,6 @@
+SELECT
+COUNT(id) AS 'quanti_iscritti', YEAR(enrolment_date) AS 'anno_iscrizione'
+FROM
+students
+GROUP BY anno_iscrizione
+ORDER BY quanti_iscritti
